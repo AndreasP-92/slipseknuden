@@ -72,6 +72,10 @@ var artikkel_01 = [
     },
 ];
 
+var produkter = require('../public/data/produkter.json').produkter;
+var slips = require('../modules/slips')
+var multer = require('multer'); // v1.0.5
+var upload = multer();
 
 
 module.exports = function (app) {
@@ -90,4 +94,32 @@ module.exports = function (app) {
             });
         });
     });
+    app.get('/admin', function (req, res, next) {
+        res.render('pages/admin', {
+            produkter: produkter
+        });
+    });
+    // OPRET
+    app.post('/opret', upload.array(), function (req, res, next) {
+        slips.opret(req.body)
+        res.redirect('/admin');
+    })
+    // REDIGER
+    app.get('/rediger/:id', upload.array(), function (req, res, next) {
+        app.param(['id'], function (req, res, next, value) {
+            res.render('pages/rediger', {
+                produkter: produkter[value - 1],
+            });
+        })
+    })
+    app.post('/rediger', upload.array(), function (req, res, next) {
+        slips.rediger(req.body)
+        res.redirect('/admin');
+    })
+    // SLET
+    app.get('/slet/:id', upload.array(), function (req, res, next) {
+        app.param(['id'], function (req, res, next, value) {
+            slips.slet(value)
+        })
+    })
 }

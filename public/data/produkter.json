@@ -1,0 +1,75 @@
+{
+    "produkter": [
+        {
+            "id": 1,
+            "img": "images/produkter/img_01.jpg",
+            "tittel": "Shoon Slips",
+            "beskrivelse": "Klassisk Brun",
+            "pris": "DKK 450 -."
+        },
+    
+        {
+            "id": 2,
+            "img": "images/produkter/img_02.jpg",
+            "tittel": "Shoon Slips",
+            "beskrivelse": "Klassisk Brun",
+            "pris": "DKK 450 -."
+        },
+    
+        {
+            "id": 3,
+            "img": "images/produkter/img_03.jpg",
+            "tittel": "Shoon Slips",
+            "beskrivelse": "Klassisk Brun",
+            "pris": "DKK 450 -."
+        },
+        {
+            "id": 4,
+            "img": "images/produkter/img_04.jpg",
+            "tittel": "US Imports",
+            "beskrivelse": "Sølvpil",
+            "pris": "Pris 300-."
+        },
+    
+        {
+            "id": 5,
+            "img": "images/produkter/img_05.jpg",
+            "tittel": "US Imports",
+            "beskrivelse": "Sølvpil",
+            "pris": "Pris 300-."
+        },
+    
+    
+        {
+            "id": 6,
+            "img": "images/produkter/img_06.jpg",
+            "tittel": "US Imports",
+            "beskrivelse": "Sølvpil",
+            "pris": "Pris 300-."
+        },
+    
+        {
+            "id": 7,
+            "img": "images/produkter/img_07.jpg",
+            "tittel": "Shoon Slips",
+            "beskrivelse": "Klassisk Brun",
+            "pris": "DKK 450 -."
+        },
+    
+        {
+            "id": 8,
+            "img": "images/produkter/img_08.jpg",
+            "tittel": "Shoon Slips",
+            "beskrivelse": "Klassisk Brun",
+            "pris": "DKK 450 -."
+        },
+    
+        {
+            "id": 9,
+            "img": "images/produkter/img_09.jpg",
+            "tittel": "Shoon Slips",
+            "beskrivelse": "Klassisk Brun",
+            "pris": "DKK 450 -."
+        }    
+    ]
+}
